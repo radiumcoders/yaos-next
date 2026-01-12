@@ -28,7 +28,7 @@ function Navbar() {
     VMMP   ,M  \`MM   MM        MM   \`YMMNq.
      MM    AbmmmqMA  MM.      ,MP .     \`MM
      MM   A'     VML \`Mb.    ,dP' Mb     dM
-   .JMML.AMA.   .AMMA. \`"bmmd"'   P"Ybmmd"`}
+   .JMML.AMA.   .AMMA. \`"bmmd"'   P"Ybmmd"  `}
       </pre>
       <div>
         <ButtonGroup>
