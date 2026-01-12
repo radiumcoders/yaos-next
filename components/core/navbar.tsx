@@ -11,6 +11,7 @@ import Container from "./container";
 import { Button } from "../ui/button";
 import { useTheme } from "next-themes";
 import { ButtonGroup } from "../ui/button-group";
+import Link from "next/link";
 
 function Navbar() {
   const [mounted, setMounted] = useState(false);
@@ -30,11 +31,12 @@ function Navbar() {
      MM   A'     VML \`Mb.    ,dP' Mb     dM
    .JMML.AMA.   .AMMA. \`"bmmd"'   P"Ybmmd"  `}
       </pre>
-      <div>
-        <ButtonGroup>
-          <Button variant={"outline"} size={"icon"}>
-            <HouseSimpleIcon weight="bold" size={32} />
-          </Button>
+      <div className="flex gap-2">
+          <Link href={"/"}>
+            <Button variant={"outline"} size={"icon"}>
+              <HouseSimpleIcon weight="bold" size={32} />
+            </Button>
+          </Link>
           {mounted && (
             <Button
               variant={"outline"}
@@ -48,11 +50,12 @@ function Navbar() {
               )}
             </Button>
           )}
-          <Button variant={"outline"}>
-            <PlusIcon weight="bold" size={32} />
-            Add
-          </Button>
-        </ButtonGroup>
+          <Link href={"/add"}>
+            <Button variant={"outline"}>
+              <PlusIcon weight="bold" size={32} />
+              Add
+            </Button>
+          </Link>
       </div>
     </Container>
   );
